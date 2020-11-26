@@ -15,7 +15,7 @@ jobs:
 
     - id: nginx_docker
       name: Build test nginx-docker
-      uses: RasaHQ/action-server-gha@master
+      uses: ./
       # Full list of parameters: https://github.com/RasaHQ/action-server-gha/tree/master#input-arguments
       with:
         docker_image_name: 'kukulol/nginx-docker'
