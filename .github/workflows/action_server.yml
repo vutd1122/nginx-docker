@@ -15,7 +15,7 @@ jobs:
 
     - id: nginx_docker
       name: Build test nginx-docker
-      uses: /kec/
+      uses: ./kec/
       with:
         docker_image_name: 'kukulol/nginx-docker'
         docker_registry_login: ${{ secrets.DOCKER_HUB_LOGIN }}
