@@ -1,5 +1,5 @@
-name: 'Build Action Server image'
-description: 'Build a Docker image with custom actions for Rasa Action Server'
+name: 'Build test nginx-docker'
+description: 'Build test nginx-docker'
 inputs:
   actions_directory:
     description: "Path to the directory with actions."
