@@ -1,0 +1,11 @@
+branding:
+  icon: 'layers'
+  color: 'blue'
+  
+  runs:
+  using: "composite"
+  steps:
+    - name: echo test input
+    run: |-
+        echo "DM Thon lam ${{ env.DOCKER_IMAGE_NAME }}"
+      shell: bash
