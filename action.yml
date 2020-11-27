@@ -62,15 +62,10 @@ branding:
     - name: Set environment variables
       shell: bash
       run: |-
-        # Set Dockerfile
-        if [[ "${{ inputs.dockerfile }}" == "" ]]; then
-          echo "DOCKERFILE=${{ github.action_path }}/Dockerfile" >> $GITHUB_ENV
-        else
-          echo "DOCKERFILE=${{ inputs.dockerfile }}" >> $GITHUB_ENV
-        fi
+        echo "DOCKERFILE=${{ github.action_path }}/Dockerfile" >> $GITHUB_ENV
 
         # Set DOCKER_IMAGE_FULL_NAME
-        echo "DOCKER_IMAGE_FULL_NAME=${{ inputs.docker_registry }}/${{ inputs.docker_image_name }}:${{ inputs.docker_image_tag }}" >> $GITHUB_ENV
+        echo "DOCKER_IMAGE_FULL_NAME=docker.io/${{ inputs.docker_image_name }}:${{ inputs.docker_image_tag }}" >> $GITHUB_ENV
        
     - name: Docker login
       run: |-
