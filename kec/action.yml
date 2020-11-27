@@ -6,6 +6,7 @@ branding:
   using: "composite"
   steps:
     - name: echo test input
-    run: |-
+    shell: bash
+    run: |
         echo "DM Thon lam ${{ env.DOCKER_IMAGE_NAME }}"
-      shell: bash
+      
