@@ -21,6 +21,7 @@ jobs:
         docker_image_name: 'kukulol/nginx-docker'
         docker_registry_login: ${{ secrets.DOCKER_HUB_LOGIN }}
         docker_registry_password: ${{ secrets.DOCKER_HUB_PASSWORD }}
+        dockerfile:  
         # More details about github context:
         # https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#github-context
         #
